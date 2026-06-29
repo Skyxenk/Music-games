@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/styleLotoPage.css">
+    <link rel="stylesheet" href="../styles/allPagesStyles.css">
+    <script type="module" src="../jsCode/renderPages.js" defer></script>
+    <script type="module" src="../jsCode/backPageButton.js" defer></script>
+    <script type="module" src="../jsCode/videoLibrary.js" defer></script>
+    <script type="module" src="../jsCode/lotoApp.js" defer></script>
+    <title>Музыкальное лото</title>
+</head>
+<body>
+    
+    <div class="game-container">
+        <div class="header">
+            <h1 class="game-title">Музыкальное лото</h1>
+        </div>
+
+        <div class="content-wrapper">
+
+            <div class="sidebar">
+
+                <div class="theme-switch-wrapper">
+                    <i class="fas fa-moon theme-icon"></i>
+                    <label class="theme-switch">
+                        <input type="checkbox" id="themeToggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <i class="fas fa-sun theme-icon"></i>
+                </div>
+
+                <div class="buttonsRound">
+                    <button class="btnRound active" id="one">
+                                 Раунд 1
+                    </button>
+                    <button class="btnRound" id="two">
+                                 Раунд 2
+                    </button>
+                </div>
+
+                <div class="game-rules">
+                    <h2 class="section-title"><i class="fas fa-info-circle"></i> Правила игры</h4>
+                    <ul class="rules-list">
+                        <li>Тяните бочонок с номером из мешка</li>
+                        <li>Нажмите на кнопку с тем номером, который вытянули</li>
+                        <li>Слушайте фрагменты музыкальных композиций</li>
+                        <li>Найдите соответствующее название на своей карточке</li>
+                        <li>Закройте все ячейки на карточке первым</li>
+                        <li>Кричите "ЛОТО!" для победы</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="field">
+
+               <!-- Сюда подгружаются кнопки -->
+                
+            </div>
+
+        
+
+            <div class="menu-section">
+                        <h2 class="section-title"> Навигация</h2>
+                        <div class="game-controls">
+                            <button class="btn pulse btnBack">
+                                <!-- <i class="fas fa-play"></i> --> Назад
+                            </button>
+                        </div>
+            </div>
+
+        </div>
+        
+    </div>
+</body>
+</html>

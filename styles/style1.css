@@ -1,0 +1,128 @@
+.main-content {
+    flex: 1;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.game-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.option-card {
+    background: rgba(30, 30, 50, 0.7);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.option-card:hover {
+    background: rgba(40, 40, 65, 0.9);
+    transform: translateY(-5px);
+    border-color: #ff416c;
+}
+
+.option-card.active {
+    background: rgba(255, 65, 108, 0.2);
+    border-color: #ff416c;
+    box-shadow: 0 0 15px rgba(255, 65, 108, 0.4);
+}
+
+.option-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #4a00e0;
+    background: rgba(255, 255, 255, 0.1);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.option-title {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: #ffcc00;
+}
+
+.option-desc {
+    font-size: 0.95rem;
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+.game-controls {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+
+.lightTheme .option-card {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    backdrop-filter: blur(4px);
+}
+
+.lightTheme .option-card:hover {
+    background: rgba(255, 255, 255, 0.7);
+    border-color: #7c3aed;
+    box-shadow: 0 8px 25px rgba(124, 58, 237, 0.15);
+}
+
+.lightTheme .option-card.active {
+    background: rgba(124, 58, 237, 0.2);
+    border-color: #7c3aed;
+    box-shadow: 0 0 15px rgba(124, 58, 237, 0.2);
+}
+
+.lightTheme .option-icon {
+    color: #7c3aed;
+    background: rgba(124, 58, 237, 0.15);
+}
+
+.lightTheme .option-title {
+    color: #7c3aed;
+}
+
+.lightTheme .option-desc {
+    color: #2d2d4a;
+}
+
+.lightTheme .btn-secondary {
+    background: rgba(255, 255, 255, 0.5);
+    color: #2d2d4a;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+.lightTheme .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.75);
+}

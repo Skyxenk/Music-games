@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инструкция</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/allPagesStyles.css">
+    <script type="module" src="../jsCode/backPageButton.js" defer></script>
+    <script type="module" src="../jsCode/renderPages.js" defer></script>
+    </head>
+<body style="flex-direction: column;">
+    <div class="game-container">
+        <!-- Шапка -->
+        <div class="header">
+            <h1 class="game-title">Инструкция</h1>
+            <p class="game-subtitle">Как добавлять треки и видео в игры</p>
+        </div>
+        
+        <div class="content-wrapper">
+            <!-- Боковая панель -->
+            <div class="sidebar">
+                
+                <div class="theme-switch-wrapper">
+                    <i class="fas fa-moon theme-icon"></i>
+                    <label class="theme-switch">
+                        <input type="checkbox" id="themeToggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <i class="fas fa-sun theme-icon"></i>
+                </div>
+            
+               <!--  <div class="game-rules">
+                    <h4><i class="fas fa-info-circle"></i> Инструкция</h4>
+                    <ul class="rules-list">
+                        <li>Выбери режим игры</li>
+                        <li>Выбери жанр</li>
+                        <li>Нажми "Начать игру"</li>
+                        <li>Развлекайся</li>
+                    </ul>
+                </div> -->
+            </div>
+            
+            <div class="main-content">
+                <!-- Блок по добавлению видео -->
+                <div class="menu-section">
+                    <h2 class="section-title"></i>Как добавить видео в музыкальное лото</h2>
+                    <div class="game-options-addContent">
+                        <ul class="rules-list">
+                            <li>В папке с игрой найдите папку "video" </li>
+                            <li>Поместите в нее видеофайл формата mov, название должно содежать только число, соответствующее кнопке, на которую оно будет запускаться</li>
+                            <li>Если вы хотите заменить одно видео на другое, то удалите текущее и добавьте новое с тем же числом в названии</li>
+                            <li>Откройте папку jsCode и в ней файл videoLibrary, это библиотека видео, каждое видео — это элемент, аналогичный скриншоту ниже</li>
+                            <li>Для замены видео, найдите элемент под нужным id и поменяйте название трека и исполнителя на необходимые</li>
+                            <li>Для добавления нового видео, скопируйте последний элемент и вставьте его ниже, затем измените под новый видеофайл</li>
+                        </ul>
+                        <img src="../assets/videoLibraryScreen.png" alt="">
+
+                        <!-- <p>Инструкция по добавлению видео</p>
+                        <p><input type="text" class="title" placeholder="Введите название"></p>
+                        <p><input type="text" class="artist" placeholder="Введите имя исполнителя"></p>
+                        <button class="btn btn-primary pulse">
+                             Добавить видео
+                        </button> -->
+                    </div>
+                </div>
+                
+                <!-- блок по добавлению треков -->
+                <div class="menu-section">
+                    <h2 class="section-title">Как добавить треки в квиз</h2>
+                    <div class="game-options-addContent">
+
+                        <ul class="rules-list">
+                            <li>В папке с игрой найдите папку "music" </li>
+                            <li>Поместите в нее файл с музыкой, название должно содежать только число, соответствующее кнопке, на которую оно будет запускаться</li>
+                            <li>Если вы хотите заменить один трек на другой, то удалите текущий и добавьте новый с тем же числом в названии</li>
+                            <li>Откройте папку jsCode и в ней папка music Player Quize, там лежит файл musicPlayerLibrary, это библиотека треков, каждый трек — это элемент, аналогичный скриншоту ниже</li>
+                            <li>Для замены трека, найдите элемент под нужным id и поменяйте название трека, исполнителя и т.д. на необходимые</li>
+                            <li>Для добавления нового, скопируйте последний элемент и вставьте его ниже, затем измените под новый трек</li>
+                        </ul>
+                        <img src="../assets/musicLibraryScreen.png" alt="">
+                        <!-- <p>Инструкция по добавлению треков</p>
+                        <p><input type="text" class="title" placeholder="Введите название"></p>
+                        <p><input type="text" class="artist" placeholder="Введите имя исполнителя"></p>
+                        <button class="btn btn-primary pulse">
+                             Добавить трек
+                        </button> -->
+                    </div>
+                    </div>
+            </div>
+                
+                <!-- Управление игрой -->
+                <div class="menu-section">
+                    <h2 class="section-title">Навигация</h2>
+                    <div class="game-controls">
+                        <button class="btn btn-primary pulse btnBack backPage">
+                             Назад
+                        </button>
+                        <!-- <button class="btn btn-secondary">
+                            <i class="fas fa-cog"></i> Настройки
+                        </button>
+                        <button class="btn btn-secondary">
+                            <i class="fas fa-trophy"></i> Таблица лидеров
+                        </button>
+                        <button class="btn btn-success">
+                            <i class="fas fa-user-plus"></i> Пригласить друга
+                        </button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

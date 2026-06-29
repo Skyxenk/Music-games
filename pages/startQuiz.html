@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/allPagesStyles.css">
+    <link rel="stylesheet" href="../styles/styleQuizPage.css">
+    <link rel="stylesheet" href="../styles/styleMusicPlayer.css">
+    <script type="module" src="../jsCode/backPageButton.js" defer></script>
+    <script type="module" src="../jsCode/renderPages.js" defer></script>
+    <script type="module" src="../jsCode/quizApp.js" defer></script>
+    <script type="module" src="../jsCode/Music Player Quize/addPlayer.js" defer></script>
+    <script type="module" src="../jsCode/Music Player Quize/musicPlayerLogic.js" defer></script>
+    <title>Квиз</title>
+</head>
+<body>
+    
+    <div class="game-container">
+        <div class="header">
+            <h1 class="game-title">Квиз</h1>
+        </div>
+
+        <div class="content-wrapper">
+
+            <div class="sidebar">
+
+                <div class="theme-switch-wrapper">
+                    <i class="fas fa-moon theme-icon"></i>
+                    <label class="theme-switch">
+                        <input type="checkbox" id="themeToggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <i class="fas fa-sun theme-icon"></i>
+                </div>
+
+                <h2 class="section-title">Список игроков</h2>
+                <!-- <div> -->
+                    <div class="input-with-icon">
+                        <input type="text" placeholder="Имя игрока" class="name-input">
+                        <button class="btnAddPlayer">
+                                 Добавить игрока
+                            </button>
+                    </div>
+                    <ul class="rules-list player-list"></ul>
+                <!-- </div> -->
+
+                <div class="game-rules">
+                    <h2 class="section-title"><i class="fas fa-info-circle"></i> Правила игры</h4>
+                    <ul class="rules-list">
+                        <li>Тяните бочонок с номером из мешка</li>
+                        <li>Нажмите на кнопку с тем номером, который вытянули</li>
+                        <li>Слушайте фрагменты музыкальных композиций</li>
+                        <li>Угадайте название трека</li>
+                        <li>Нажмите кнопку "Показать название" для проверки</li>
+                        <li>Для победы угадайте как можно больше</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="field">
+
+                <!-- Сюда подгружаются кнопки -->
+                
+            </div>
+
+        
+
+            <div class="menu-section">
+                        <h2 class="section-title"> Навигация</h2>
+                        <div class="game-controls">
+                            <button class="btn btn-primary btnBack pulse">
+                                 Назад
+                            </button>
+                        </div>
+            </div>
+
+        </div>
+        
+    </div>
+</body>
+</html>

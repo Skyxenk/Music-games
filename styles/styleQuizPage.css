@@ -1,0 +1,106 @@
+.btnAddPlayer {
+    width: 100%;
+    margin-top: 10% ;
+    padding: 6px 5px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    min-width: 180px;
+    background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%);
+    color: white;
+    box-shadow: 0 5px 15px rgba(255, 65, 108, 0.4);
+}
+
+.btnAddPlayer:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 65, 108, 0.6);
+}
+
+.name-input {
+    width: 100%;
+    padding: 5px 5px 5px 5px;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.name-input:focus {
+    background: rgba(255,255,255,0.15);
+    border-color: #4facfe;
+    box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.3);
+    outline: none;
+}
+
+.input-with-icon {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.player-list {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.player-list li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.pointPlusMinus {
+    background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%);
+    width: 30px;
+    height: 30px;
+    min-width: 30px; /* Убираем фиксированную ширину */
+    padding: 0;
+    margin: 0 5px; /* Заменяем margin-top на боковые отступы */
+    border: none;
+    border-radius: 50%; /* Круглые кнопки */
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex; /* Изменяем с flex на inline-flex */
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+.lightTheme .btnAddPlayer {
+    background: linear-gradient(90deg, #7c3aed 0%, #ec4899 100%);
+    box-shadow: 0 5px 15px rgba(124, 58, 237, 0.3);
+}
+
+.lightTheme .btnAddPlayer:hover {
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.4);
+}
+
+.lightTheme .name-input {
+    background: rgba(0, 0, 0, 0.04);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    color: #1a1a2e;
+}
+
+.lightTheme .name-input:focus {
+    background: rgba(124, 58, 237, 0.05);
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
+}
+
+.lightTheme .player-list {
+    color: #2d2d4a;
+}
+
+.lightTheme .pointPlusMinus {
+    background: linear-gradient(90deg, #7c3aed 0%, #ec4899 100%);
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музыкальные игры</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles/style1.css">
+    <link rel="stylesheet" href="./styles/allPagesStyles.css">
+    <script type="module" src="./jsCode/appHomePage.js" defer></script>
+    <script type="module" src="./jsCode/renderPages.js" defer></script>
+    </head>
+<body>
+    <div class="game-container">
+        <!-- Шапка -->
+        <div class="header">
+            <h1 class="game-title">Музыкальные игры</h1>
+            <p class="game-subtitle">Угадай мелодию по фрагменту или сыграй в музыкальное лото</p>
+        </div>
+        
+        <div class="content-wrapper">
+            <!-- Боковая панель -->
+            <div class="sidebar">
+                
+                <div class="theme-switch-wrapper">
+                    <i class="fas fa-moon theme-icon"></i>
+                    <label class="theme-switch">
+                        <input type="checkbox" id="themeToggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <i class="fas fa-sun theme-icon"></i>
+                </div>
+
+
+                <div class="game-rules">
+                    <h2 class="section-title"><i class="fas fa-info-circle"></i>Инструкция</h4>
+                    <ul class="rules-list">
+                        <li>Выбери режим игры</li>
+                        <li>Выбери жанр</li>
+                        <li>Нажми "Начать игру"</li>
+                        <li>Развлекайся</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Основной контент -->
+            <div class="main-content">
+                <!-- Раздел выбора режима -->
+                <div class="menu-section">
+                    <h2 class="section-title"><i class="fas fa-gamepad"></i> Режим игры</h2>
+                    <div class="game-options">
+                        <div class="option-card active">
+                            <div class="option-icon">
+                                <i class="fas fa-headphones"></i>
+                            </div>
+                            <h3 class="option-title">Музыкальное лото</h3>
+                            <p class="option-desc">Классическое лото</p>
+                        </div>
+                        
+                        <div class="option-card">
+                            <div class="option-icon">
+                                <i class="fas fa-guitar"></i>
+                            </div>
+                            <h3 class="option-title">Квиз</h3>
+                            <p class="option-desc">Угадайте различные произведения</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- Раздел Жанра -->
+                <div class="menu-section">
+                    <h2 class="section-title"><i class="fas fa-chart-line"></i>Жанр</h2>
+                    <div class="game-options">
+                        <div class="optin-title">В разработке <i class="fas fa-spinner fa-spin"></i></div>
+                        <!-- <div class="option-card">
+                            <div class="option-icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <h3 class="option-title">Рок</h3>
+                            <p class="option-desc">Популярные рок хиты</p>
+                        </div>
+                        
+                        <div class="option-card active">
+                            <div class="option-icon">
+                                <i class="fas fa-mountain"></i>
+                            </div>
+                            <h3 class="option-title">Рэп</h3>
+                            <p class="option-desc">Рэп исполнители</p>
+                        </div> -->
+                        
+                    </div>
+                </div>
+                
+                <!-- Управление игрой -->
+                <div class="menu-section">
+                    <h2 class="section-title"><i class="fas fa-play-circle"></i> Управление игрой</h2>
+                    <div class="game-controls">
+                        <button class="btn btn-primary pulse">
+                            <i class="fas fa-play"></i> Начать игру
+                        </button>
+                        <button class="btn btn-secondary">
+                            <i class="fas fa-plus"></i> Добавить треки и видео
+                        </button>
+                        <!-- <button class="btn btn-secondary">
+                            <i class="fas fa-trophy"></i> Таблица лидеров
+                        </button>
+                        <button class="btn btn-success">
+                            <i class="fas fa-user-plus"></i> Пригласить друга
+                        </button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>
